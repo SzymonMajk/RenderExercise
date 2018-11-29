@@ -7,8 +7,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import org.w3c.dom.Text;
-
 public class DetailActivity extends AppCompatActivity {
 
     @Override

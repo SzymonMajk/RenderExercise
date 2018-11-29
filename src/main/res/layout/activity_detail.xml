@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
+
+    <!-- TODO (17) I am not a good graphic guy...
+        Please use RelativeLayout or ContrainsLayout to make it look better! -->
 
     <TextView
         android:id="@+id/tv_from"
@@ -13,9 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/tv_to"
@@ -25,11 +26,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tv_from"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/textView6"
@@ -39,10 +36,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="70dp"
-        android:text="  =======>>>>>>   "
-        app:layout_constraintEnd_toStartOf="@+id/tv_to"
-        app:layout_constraintStart_toEndOf="@+id/tv_from"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="  =======>>>>>>   " />
 
     <TextView
         android:id="@+id/tv_duration"
@@ -51,9 +45,7 @@
         android:layout_height="35dp"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tv_method"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/tv_method"
@@ -63,9 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginStart="16dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="TextView" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -73,9 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="64dp"
-        android:text="Baggage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:text="Baggage" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -84,10 +72,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
-        android:text="Dog"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:text="Dog" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -95,49 +80,37 @@
         android:layout_height="34dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="64dp"
-        android:text="Fresh air"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        android:text="Fresh air" />
 
     <RadioGroup
         android:layout_width="181dp"
         android:layout_height="165dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox">
+        android:layout_marginTop="24dp">
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Near window"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="242dp" />
+            android:text="Near window" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Middle"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="281dp" />
+            android:text="Middle" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Border"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="324dp" />
+            android:text="Border" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Standing"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="367dp" />
+            android:text="Standing" />
 
     </RadioGroup>
 
@@ -147,8 +120,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Active"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="Active" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

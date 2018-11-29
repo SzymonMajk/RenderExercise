@@ -1,49 +1,28 @@
 package kis.agh.edu.pl.renderexerise;
 
-import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.TextView;
-
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder> {
+//TODO (3) MainAdapter should extend RecyclerView.Adapter, with proper ViewHolder type
+public class MainAdapter {
 
     private List<DataSource.Trip> mDataset;
     private MainActivity mainActivity;
 
-    public static class MainViewHolder extends RecyclerView.ViewHolder {
-        public TextView mTextView;
-        public FrameLayout layout;
+    //TODO (5) Add static class MainViewHolder extending RecyclerView.ViewHolder, with
+    //TextView and FrameLayout, FrameLayout as view should be added as constructor parameter
 
-        public MainViewHolder(View v) {
-            super(v);
-            mTextView = v.findViewById(R.id.tv_recycler_view);
-            layout = (FrameLayout) v;
-        }
-    }
+    //TODO (4) In construtor get List<DataSource.Trip> and MainActivity and pass them to private fields
 
-    public MainAdapter(List<DataSource.Trip> myDataset, MainActivity mainActivity) {
-            mDataset = myDataset;
-            this.mainActivity = mainActivity;
-    }
+    //TODO (6) Override onCreateViewHolder, and use LayoutInflater to inflate main_text_view layout
 
-    @Override
-    public MainAdapter.MainViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    //TODO (7) Use my onBidnViewHolder, just uncomment, make sure your code well integrate with this fantastic piece of mastepiece!
 
-        View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.main_text_view, parent, false);
-        return new MainViewHolder(v);
-
-    }
-
+    /*
     @Override
     public void onBindViewHolder(MainAdapter.MainViewHolder holder, final int position) {
         holder.mTextView.setText(mDataset.get(position).shortDescription());
-        holder.layout.setOnClickListener(new View.OnClickListener() {
+        //TODO (16) I forgot name of the listener, could you fill it properly?
+        holder.layout.setIDoNotWhichListener(new View.Which???Listener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mainActivity, DetailActivity.class);
@@ -60,11 +39,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
                 mainActivity.startActivity(intent);
             }
         });
+    }*/
 
-    }
+    //TODO (8) Override getItemCount() and simply retur size of dataset
 
-    @Override
-    public int getItemCount() {
-        return mDataset.size();
-    }
 }
